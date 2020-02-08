@@ -1,2 +1,2 @@
 # TIL
-Today I Run
+Today I Learn
