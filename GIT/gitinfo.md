@@ -4,9 +4,8 @@
 >git (vscode)로 설정 파일 열기 
 >vscode에서 추가해준다
 ```
-git config --global core.editor "code --wait" //--wait은 vscode가 닫힐때 까지 기다린
+git config --global core.editor "code --wait" //--wait은 vscode가 닫힐때 까지 기다린다 
 git config --global -e //설정파일을 vscode로 열기
-다 
 ```	
 
 ### 깃 기본 설정하기
@@ -18,8 +17,8 @@ git config user.email "메일"
 ### auto CRLF(문자입력타입) 설정
 >CRLF방식에 따라 설정을 해줘야 한다
 ```
-//windows에서는 true사용하고 mac에서는 false로 설정해준
-git config core.autocrlf true 다
+//windows에서는 true사용하고 mac에서는 input로 설정해준다
+git config core.autocrlf true 
 ```
 
 ### 설정 확인
@@ -51,18 +50,10 @@ git config --global alias.st status
 ```
   
 ### Git 이해하기
-~~그래프로 그림을 그려보고 어려우면 그림파일 첨부~~
-git은 아래와 같이 이루어져 있다
-working directory --- add --- staging area -- push -- .git directory
+![Git 구조](./img/git_structure.png)
+>
 
-```mermaid
-graph LR
-WD[WorkingDirectory] -- add --> SA[StagingArea];
-SA[StagingArea] -- commit --> gitD[.gitDirectory];
-gitD[.gitDirectory] -- push --> RS[Remote];
-
-```
-
+### Git 사용하기
 ```
 git add [파일명]
 git commit -m ["메세지"]
