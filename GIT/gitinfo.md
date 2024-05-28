@@ -20,6 +20,12 @@ git config user.email "메일"
 //windows에서는 true사용하고 mac에서는 input로 설정해준다
 git config core.autocrlf true 
 ```
+### 한글파일 사용 하기
+> 한글명파일을 바로 사용하면 깨진다
+core.quotepath 옵션을 false로 변경해주면 한글명을 사용 할 수 있다(디폴드 true)
+```
+git config core.quotepath false
+```
 
 ### 설정 확인
 ```
